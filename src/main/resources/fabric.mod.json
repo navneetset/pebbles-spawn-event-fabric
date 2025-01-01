@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"id": "pebbles-spawn-event",
+	"version": "${version}",
+	"name": "Pebble's Spawn Event",
+	"description": "Cobblemon spawn event for legendaries and whatnot!",
+	"authors": [
+		"lilpebs"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/pebbles-spawn-event/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			{
+				"value": "tech.sethi.pebbles.spawnevents.SpawnEvents",
+				"adapter": "kotlin"
+			}
+		]
+	},
+	"mixins": [
+		"pebbles-spawn-event.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*",
+		"fabric-language-kotlin": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
